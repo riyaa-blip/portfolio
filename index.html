@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riya Nath | Where Silence Burns Magenta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <p class="loader-text">IGNITING</p>
+      <div class="loader-bar"><span id="loader-fill"></span></div>
+      <p class="loader-count"><span id="loader-num">0</span>%</p>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- BACKGROUND -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="scroll-progress"><span id="progress-bar"></span></div>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">R<span>N</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">Origin</a>
+      <a href="#journey">Journey</a>
+      <a href="#code">Code</a>
+      <a href="#passions">Passions</a>
+      <a href="#paintings">Canvas</a>
+      <a href="#photography">Lens</a>
+      <a href="#arena">Arena</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow reveal">COMPUTER SCIENCE &bull; ART &bull; DISCIPLINE</p>
+        <h1 class="hero-title">
+          <span class="line"><span class="word">RIYA</span></span>
+          <span class="line"><span class="word outline">NATH</span></span>
+        </h1>
+        <p class="hero-type"><span id="typewriter"></span><span class="caret">|</span></p>
+        <div class="hero-cta reveal">
+          <a href="#about" class="btn btn-fill"><span>Enter The Dark</span></a>
+          <a href="#contact" class="btn btn-ghost"><span>Summon Me</span></a>
+        </div>
+      </div>
+      <div class="hero-side reveal">
+        <span>SCROLL</span>
+        <i></i>
+      </div>
+      <div class="hero-speed">
+        <div><b data-count="1">0</b><small>YEAR OF FIRE</small></div>
+        <div><b data-count="4">0</b><small>TONGUES SPOKEN</small></div>
+        <div><b data-count="3">0</b><small>ARENAS CONQUERED</small></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>PAINTER OF SHADOWS</span><em>✦</em>
+        <span>CHASER OF LIGHT</span><em>✦</em>
+        <span>WRITER OF CODE</span><em>✦</em>
+        <span>FIGHTER BY DISCIPLINE</span><em>✦</em>
+        <span>PAINTER OF SHADOWS</span><em>✦</em>
+        <span>CHASER OF LIGHT</span><em>✦</em>
+        <span>WRITER OF CODE</span><em>✦</em>
+        <span>FIGHTER BY DISCIPLINE</span><em>✦</em>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section-head reveal">
+        <span class="section-no">01</span>
+        <h2>The Origin</h2>
+        <p class="section-sub">Born where the rivers whisper, forged where the code never sleeps.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="photo-wrap reveal tilt">
+          <div class="photo-frame">
+            <img src="images/riya.jpg" alt="Riya Nath" onerror="this.style.display='none'" />
+            <div class="photo-fallback">RN</div>
+          </div>
+          <div class="photo-glow"></div>
+          <span class="photo-tag">RIYA NATH</span>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="lead">I was born in the hills and rivers of <strong>Assam</strong>, a land where the mist remembers every secret.</p>
+          <p>Today I carve my path through <strong>Computer Science &amp; Engineering</strong> at <strong>IIIT Raichur, Karnataka</strong>, turning silence into logic and logic into art.</p>
+          <p>By day I speak to machines. By dusk I speak to canvas, lens and steel. Between them lives a girl who refuses to be ordinary.</p>
+
+          <div class="lang-box">
+            <h4>Languages I Read &amp; Write</h4>
+            <div class="lang-list">
+              <span>অসমীয়া <small>Assamese</small></span>
+              <span>বাংলা <small>Bengali</small></span>
+              <span>हिन्दी <small>Hindi</small></span>
+              <span>English <small>English</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY / EDUCATION -->
+    <section class="section journey" id="journey">
+      <div class="section-head reveal">
+        <span class="section-no">02</span>
+        <h2>The Journey</h2>
+        <p class="section-sub">Every milestone, a mile marker on a road that only burns forward.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card tilt">
+            <span class="t-year">CLASS X</span>
+            <h3>Akshay Public School</h3>
+            <p class="t-loc">Kota, Rajasthan</p>
+            <div class="t-score"><b data-count="94.4" data-dec="1">0</b><small>% &mdash; BOARDS</small></div>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card tilt">
+            <span class="t-year">CLASS XII</span>
+            <h3>Shiv Jyoti International School</h3>
+            <p class="t-loc">Kota, Rajasthan</p>
+            <div class="t-score"><b data-count="89.4" data-dec="1">0</b><small>% &mdash; BOARDS</small></div>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card tilt">
+            <span class="t-year">JEE MAINS</span>
+            <h3>The National Arena</h3>
+            <p class="t-loc">All India Examination</p>
+            <div class="t-score"><b data-count="95.1680" data-dec="4">0</b><small> PERCENTILE</small></div>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot glow"></div>
+          <div class="t-card tilt active">
+            <span class="t-year">NOW &bull; 1ST YEAR</span>
+            <h3>IIIT Raichur</h3>
+            <p class="t-loc">B.Tech Computer Science &amp; Engineering &bull; Karnataka</p>
+            <div class="t-score"><b>CSE</b><small> THE CHAPTER IS BEING WRITTEN</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CODE / SEMESTER 1 -->
+    <section class="section code" id="code">
+      <div class="section-head reveal">
+        <span class="section-no">03</span>
+        <h2>First Semester: The Code Awakens</h2>
+        <p class="section-sub">Where I first taught machines to obey, and learned they were teaching me.</p>
+      </div>
+
+      <div class="code-grid">
+        <div class="code-card reveal tilt">
+          <span class="c-icon">&lt;/&gt;</span>
+          <h3>Programming Foundations</h3>
+          <p>Variables, loops and logic: the first spells of a new language. (Edit: add your language, e.g. C / Python)</p>
+        </div>
+        <div class="code-card reveal tilt">
+          <span class="c-icon">∑</span>
+          <h3>Mathematics of Machines</h3>
+          <p>Where numbers stop being numbers and become the architecture of thought.</p>
+        </div>
+        <div class="code-card reveal tilt">
+          <span class="c-icon">{ }</span>
+          <h3>Problem Solving</h3>
+          <p>Every bug is a shadow. Every fix, a small sunrise.</p>
+        </div>
+        <div class="code-card reveal tilt">
+          <span class="c-icon">⌘</span>
+          <h3>Projects &amp; Experiments</h3>
+          <p>Details of my first creations will rise here soon.</p>
+        </div>
+      </div>
+
+      <div class="terminal reveal">
+        <div class="term-bar"><i></i><i></i><i></i><span>riya@iiit-raichur:~</span></div>
+        <pre id="terminal-text"></pre>
+      </div>
+    </section>
+
+    <!-- PASSIONS -->
+    <section class="section passions" id="passions">
+      <div class="section-head reveal">
+        <span class="section-no">04</span>
+        <h2>The Obsessions</h2>
+        <p class="section-sub">What the heart does when no one is watching.</p>
+      </div>
+
+      <div class="passion-grid">
+        <div class="passion reveal tilt">
+          <span class="p-num">I</span>
+          <h3>Painting</h3>
+          <p>I bleed colour onto silence until it begins to speak.</p>
+        </div>
+        <div class="passion reveal tilt">
+          <span class="p-num">II</span>
+          <h3>Photography</h3>
+          <p>I steal fragments of light before the night swallows them.</p>
+        </div>
+        <div class="passion reveal tilt">
+          <span class="p-num">III</span>
+          <h3>Coding</h3>
+          <p>I write invisible poetry that machines obey.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAINTINGS -->
+    <section class="section gallery" id="paintings">
+      <div class="section-head reveal">
+        <span class="section-no">05</span>
+        <h2>The Canvas</h2>
+        <p class="section-sub">Strokes born in the dark, framed in fire.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="g-item reveal" data-title="Painting I"><img src="images/painting1.jpg" alt="Painting 1" onerror="this.style.display='none'"><figcaption>Painting I</figcaption></figure>
+        <figure class="g-item tall reveal" data-title="Painting II"><img src="images/painting2.jpg" alt="Painting 2" onerror="this.style.display='none'"><figcaption>Painting II</figcaption></figure>
+        <figure class="g-item reveal" data-title="Painting III"><img src="images/painting3.jpg" alt="Painting 3" onerror="this.style.display='none'"><figcaption>Painting III</figcaption></figure>
+        <figure class="g-item wide reveal" data-title="Painting IV"><img src="images/painting4.jpg" alt="Painting 4" onerror="this.style.display='none'"><figcaption>Painting IV</figcaption></figure>
+        <figure class="g-item reveal" data-title="Painting V"><img src="images/painting5.jpg" alt="Painting 5" onerror="this.style.display='none'"><figcaption>Painting V</figcaption></figure>
+        <figure class="g-item tall reveal" data-title="Painting VI"><img src="images/painting6.jpg" alt="Painting 6" onerror="this.style.display='none'"><figcaption>Painting VI</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- PHOTOGRAPHY -->
+    <section class="section gallery" id="photography">
+      <div class="section-head reveal">
+        <span class="section-no">06</span>
+        <h2>The Lens</h2>
+        <p class="section-sub">Moments captured before they learn to vanish.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="g-item tall reveal" data-title="Frame I"><img src="images/photo1.jpg" alt="Photo 1" onerror="this.style.display='none'"><figcaption>Frame I</figcaption></figure>
+        <figure class="g-item reveal" data-title="Frame II"><img src="images/photo2.jpg" alt="Photo 2" onerror="this.style.display='none'"><figcaption>Frame II</figcaption></figure>
+        <figure class="g-item wide reveal" data-title="Frame III"><img src="images/photo3.jpg" alt="Photo 3" onerror="this.style.display='none'"><figcaption>Frame III</figcaption></figure>
+        <figure class="g-item reveal" data-title="Frame IV"><img src="images/photo4.jpg" alt="Photo 4" onerror="this.style.display='none'"><figcaption>Frame IV</figcaption></figure>
+        <figure class="g-item tall reveal" data-title="Frame V"><img src="images/photo5.jpg" alt="Photo 5" onerror="this.style.display='none'"><figcaption>Frame V</figcaption></figure>
+        <figure class="g-item reveal" data-title="Frame VI"><img src="images/photo6.jpg" alt="Photo 6" onerror="this.style.display='none'"><figcaption>Frame VI</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ARENA / SPORTS -->
+    <section class="section arena" id="arena">
+      <div class="section-head reveal">
+        <span class="section-no">07</span>
+        <h2>The Arena</h2>
+        <p class="section-sub">Where discipline sharpens and instinct becomes art.</p>
+      </div>
+
+      <div class="arena-grid">
+        <div class="arena-card reveal tilt">
+          <div class="a-icon">🏸</div>
+          <h3>Badminton</h3>
+          <p>A feather flies faster than doubt. Speed is a silent promise.</p>
+          <div class="a-bar"><span style="--w:85%"></span></div>
+        </div>
+        <div class="arena-card reveal tilt">
+          <div class="a-icon">🧩</div>
+          <h3>Rubik's Cube</h3>
+          <p>Chaos in my hands, order in my mind. Six faces, one will.</p>
+          <div class="a-bar"><span style="--w:90%"></span></div>
+        </div>
+        <div class="arena-card reveal tilt">
+          <div class="a-icon">🥋</div>
+          <h3>Taekwondo</h3>
+          <p>Silent strikes, unbroken spirit. The way of foot and fist.</p>
+          <div class="a-bar"><span style="--w:80%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal">
+        <p class="eyebrow">THE FINAL CHAPTER IS YET UNWRITTEN</p>
+        <h2>Speak, and the dark<br>will answer.</h2>
+        <a href="mailto:riya.nath.cs@gmail.com" class="mail-link">riya.nath.cs@gmail.com</a>
+        <div class="contact-meta">
+          <span>IIIT Raichur, Karnataka</span>
+          <span>&bull;</span>
+          <span>Born in Assam</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> RIYA NATH &mdash; FORGED IN BLACK &amp; MAGENTA</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+    <img id="lb-img" alt="" />
+    <p id="lb-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
